@@ -238,3 +238,51 @@ body {
 .close-btn:hover {
     background-color: #3a9bdc;
 }
+
+/* History dialog overrides */
+.history-dialog {
+    max-height: 80vh;       /* limit height */
+    overflow-y: auto;       /* vertical scroll */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Vertical scrollable list */
+.history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 12px 0;
+    padding-right: 6px;     /* space for scrollbar */
+}
+
+.history-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px;
+    border-bottom: 1px solid #333;
+    background: #181818;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    color: #eee;
+}
+
+.history-user {
+    font-weight: bold;
+    color: #4cafef;         /* accent color */
+}
+
+.history-round,
+.history-group {
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+/* Muted placeholder text */
+.muted {
+    color: #888;
+    font-style: italic;
+    text-align: center;
+    margin: 12px 0;
+}
